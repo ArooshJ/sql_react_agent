@@ -1,0 +1,16 @@
+# SQL ReAct Agent - Dependencies
+
+# Backend
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# LLM Providers
+groq>=0.36.0
+google-generativeai>=1.52.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Frontend
+streamlit>=1.33.0
+requests>=2.31.0
