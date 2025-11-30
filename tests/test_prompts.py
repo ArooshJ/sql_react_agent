@@ -3,7 +3,9 @@ Test prompts.py WITHOUT making any API calls
 """
 
 import sys
-sys.path.append('src')
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from prompts import build_system_prompt, extract_action_from_response
 

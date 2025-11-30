@@ -12,13 +12,13 @@ from datetime import datetime
 # Load environment variables
 try:
     from dotenv import load_dotenv
-    env_path = Path(__file__).parent.parent / '.env'
+    env_path = Path(__file__).parent.parent.parent / '.env' # Enter correct env path here.
     load_dotenv(env_path)
 except ImportError:
     print("Warning: python-dotenv not installed.")
 
 # Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from agent import create_agent
 
@@ -59,7 +59,7 @@ def run_test_suite():
     """Run comprehensive test suite."""
     
     # Setup
-    db_path = os.path.join(os.path.dirname(__file__), 'database', 'company.db')
+    db_path = os.path.join(os.path.dirname(__file__), '..', 'database', 'company.db')
     api_key = os.getenv('GROQ_API_KEY')
     
     if not api_key:

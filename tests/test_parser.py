@@ -1,6 +1,8 @@
 """
 Test the fixed ACTION parser
 """
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 
 def extract_action_from_response_fixed(response: str):
     """

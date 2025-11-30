@@ -19,7 +19,7 @@ except ImportError:
     print("Warning: python-dotenv not installed. Set GROQ_API_KEY manually.")
 
 # Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from agent import create_agent
 
